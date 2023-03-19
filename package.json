@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "formatter": "prettier .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,6 +16,9 @@
     "express": "^4.18.2",
     "google-auth-library": "^8.7.0",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.0.2"
+    "mongoose": "^7.0.2",
+    "prettier": "^2.8.4",
+    "swagger-ui-express": "^4.6.2",
+    "yamljs": "^0.3.0"
   }
 }
