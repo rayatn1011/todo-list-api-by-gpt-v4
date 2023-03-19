@@ -25,7 +25,7 @@ cd todo-list-api
 npm install
 ```
 
-3. 建立 `.env` 檔案，並設置相應的環境變量：
+3. 建立 `.env` 檔案，並設置相應的環境變數：
 
 ```makefile
 DB_CONNECTION_STRING=<Your MongoDB connection string>
@@ -34,19 +34,27 @@ GOOGLE_CLIENT_ID=<Your Google OAuth client ID>
 ```
 
 4. 啟動伺服器：
+
 ```bash
 npm start
 ```
+
 5. API 伺服器將在 http://localhost:3000 啟動，並且可以使用 Postman 或其他 API 測試工具進行測試。
 
-## API 檔案
+## API 文件
 
-本專案提供 Swagger 檔案，以方便您查閱和測試 API。請查看 auth.yaml 和 todo.yaml 以獲取詳細的 API 資訊。
+本專案提供 Swagger 文件，以方便您查閱和測試 API。請查看 auth.yaml 和 todo.yaml 以獲取詳細的 API 資訊。
 
 ## 作者
+
 chatGPT v4 & rayatn1011
 
+## 感謝
+
+感謝 [zeabur](https://docs.zeabur.com/) 提供快速便捷的雲端部署平台。
+
 ## 許可
+
 本專案使用 MIT 許可。
 
 請注意，本專案僅供學習和參考之用。在實際生產環境中使用前，請確保對其進行充分的安全審查和測試。
