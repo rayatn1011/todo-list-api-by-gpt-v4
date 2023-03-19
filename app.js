@@ -1,13 +1,17 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocs = require('./swagger');
 const authRoutes = require('./routes/authRoutes');
 const todoRoutes = require('./routes/todoRoutes');
 
 dotenv.config();
 const app = express();
 
-app.use(express.json());
+app
+    .use(express.json())
+    .use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 mongoose.connect(process.env.MONGODB_URI, {
     useUnifiedTopology: true,
